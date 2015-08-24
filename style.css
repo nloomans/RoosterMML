@@ -1,4 +1,26 @@
-.calendar header {
+.calendar {
+	max-width: 500px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+/*.calendar header {
 	background-color: #607D8B;
 	color: white;
+	padding: 20px;
+	border-radius: 7px 7px 0px 0px;
 }
+
+table, tr td {
+    /* border: 0px solid white; *\/
+    border: none !important;
+	outline:none;
+}
+
+table tr:nth-child(4n) {
+	background-color: #E6E6E6;
+}
+
+/*** today ***\/
+.calendar > .content > table > tbody > tr > :nth-child(2) {
+	/ * background-color: rgba(0,0,0,0.5); *\/
+	left: -15px;
+}*/
