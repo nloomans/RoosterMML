@@ -1,9 +1,33 @@
+// $(document).ready(function () {
+// 	$.ajax({
+// 		url: '/RoosterMML/load.php',
+// 		data: {
+// 			url: $('#url').val()
+// 		},
+// 		dataType: 'xml'
+// 	})
+// 	.done(function( data ) {
+// 		convertCalendar(data);
+// 	})
+// 	.fail(function(jqXHR, textStatus, errorThrown) {
+// 		console.log(jqXHR);
+// 		console.log(textStatus);
+// 		console.log(errorThrown);
+//   	});
+// });
+
+// function convertCalendar (data) {
+// 	return data;
+// }
+
 $(document).ready(function () {
-	$.get('http://www.meetingpointmco.nl/Roosters-AL/doc/dagroosters/35/c/c00019.htm',function (data) {
-		$('calendar content').html(convertCalendar(data));	
+	$('#getEmail_button').click(function () {
+		var $form = $('.formContainer');
+		if ($form.css('display') == 'block') {
+			$form.css('display','none');
+		}
+		else {
+			$form.css('display','block');
+		}
 	});
 });
-
-function convertCalendar (data) {
-	return data;
-}
